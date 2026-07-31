@@ -1,36 +1,134 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Coachify
+
+A two-sided marketplace connecting successful Iranian diaspora professionals with vetted, top-tier Iranian coaches globally.
+
+## About Coachify
+
+Coachify is a specialized coaching marketplace that addresses the unique psychological, professional, and business challenges faced by the Iranian diaspora. The platform provides:
+
+- **Cultural & Linguistic Resonance**: Connect with coaches who inherently understand Iranian family dynamics, the immigrant experience, and navigating Western corporate environments
+- **Verified Excellence**: All coaches are rigorously vetted with ICF (International Coaching Federation) credentials or equivalent executive experience
+- **Frictionless Operations**: Integrated timezone management, automated calendar syncing, and seamless international payments
+
+## Tech Stack
+
+- **Framework**: Next.js 16.2.12 (React 19)
+- **Language**: TypeScript 5
+- **Styling**: Tailwind CSS 4
+- **Charts**: Recharts 3.10.1
+- **Code Quality**: ESLint with Next.js config
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 20 or higher
+- npm or yarn package manager
+
+### Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Navigate to project directory
+cd coachify-landing
+
+# Install dependencies
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Development
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Run development server
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the landing page.
 
-## Learn More
+### Build for Production
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# Create optimized production build
+npm run build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Start production server
+npm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Linting
 
-## Deploy on Vercel
+```bash
+# Run ESLint
+npm run lint
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Project Structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+coachify-landing/
+├── app/
+│   ├── components/        # Reusable React components
+│   │   ├── Header.tsx
+│   │   └── Footer.tsx
+│   ├── business-plan/     # Business plan viewer page
+│   ├── layout.tsx         # Root layout component
+│   ├── page.tsx           # Landing page
+│   └── globals.css        # Global styles
+├── public/                # Static assets
+├── package.json
+└── tsconfig.json
+```
+
+## Features
+
+### Landing Page
+- Hero section with early access CTA
+- Problem/solution value proposition
+- Separate sections for clients and coaches
+- Simple 3-step process explanation
+- Waitlist form for early access
+
+### Business Plan Viewer
+- Interactive business plan visualization
+- Market research and financial projections
+- Competitor analysis
+- Go-to-market strategy
+
+## Target Audience
+
+### For Clients
+Iranian professionals, executives, and entrepreneurs aged 28-55 seeking:
+- Executive coaching
+- Career advancement guidance
+- Burnout management
+- Immigration experience navigation
+- Business scaling support
+
+### For Coaches
+ICF-certified Iranian coaches looking for:
+- Access to high-intent clients
+- Automated admin & scheduling
+- Secure international payments
+- Professional brand elevation
+
+## Key Differentiators
+
+1. **Cultural Niche**: Only platform focused exclusively on Iranian diaspora coaching needs
+2. **Verified Quality**: Strict ICF credential requirements eliminate uncertified "coaches"
+3. **All-in-One Platform**: Replaces fragmented tools (Calendly, PayPal, Zoom) with integrated workflow
+4. **Transparent Pricing**: Clear hourly rates vs. hidden "discovery call" pricing on social media
+
+## Business Model
+
+- **Transaction Commission**: 15-20% take-rate on platform bookings
+- **SaaS Subscriptions**: Freemium model for coaches (launching Year 2)
+- **B2B Enterprise**: Corporate coaching packages for Iranian-founded companies
+
+## Market Opportunity
+
+- **Global Coaching Industry**: $5.34B (2025 ICF Global Coaching Study)
+- **Iranian Diaspora**: 4-5M globally with high educational attainment and household income
+- **Target Market**: 1-1.5M professionals willing to pay $150-400+/hour for culturally resonant coaching
+
+---
+
+Built with ❤️ for the global Iranian diaspora
